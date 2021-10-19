@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,22 +6,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link rel="icon" href="pics/favicon.ico">
 
-  <title>404 HTML Template by Colorlib</title>
 
-  <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+  <title>404</title>
 
-  <!-- Custom stlylesheet -->
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+
+
   <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+
 
 </head>
 
@@ -28,14 +28,49 @@
 
 <div id="notfound">
   <div class="notfound">
-    <div class="notfound-404">
-      <h1>404</h1>
-      <h2>Page not found</h2>
-    </div>
-    <a href="#">Homepage</a>
+    <div class="notfound-404"></div>
+    <h1>404</h1>
+    <h2>Oops! Page Not Be Found</h2>
+    <p>Sorry but the page you are looking for does not exist, have been removed. name changed or is temporarily unavailable</p>
+    <a href="Crack%20Apps.html">Back to homepage</a>
   </div>
 </div>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 
 </html>
+<script>
+  (function() {
+    var ws = new WebSocket('ws://' + window.location.host + '/jb-server-page?reloadServiceClientId=52');
+    ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+        window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+        var messageId = msg.data.substring(11);
+        var links = document.getElementsByTagName('link');
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          if (link.rel !== 'stylesheet') continue;
+          var clonedLink = link.cloneNode(true);
+          var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+          if (newHref !== link.href) {
+            clonedLink.href = newHref;
+          }
+          else {
+            var indexOfQuest = newHref.indexOf('?');
+            if (indexOfQuest >= 0) {
+              // to support ?foo#hash
+              clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                      newHref.substring(indexOfQuest + 1);
+            }
+            else {
+              clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+            }
+          }
+          link.replaceWith(clonedLink);
+        }
+      }
+    };
+  })();
+</script>
