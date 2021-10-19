@@ -36,6 +36,7 @@ body {
   display: inline-block;
   width: 140px;
   height: 140px;
+  border-radius: 50%;
   background-image: url('../yonit.gif');
   background-size: cover;
 }
