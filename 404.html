@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>404</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+
+
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+
+
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="sss" id="notfound">
+  <div class="notfound">
+    <div class="notfound-404"></div>
+    <h1>404</h1>
+    <h2>Oops! Page Not Be Found</h2>
+    <p>Sorry but the page you are looking for does not exist, have been removed. name changed or is temporarily unavailable</p>
+    <a href="Crack%20Apps.html">Back to homepage</a>
+  </div>
+
+</div>
+
+</body>
+<div class="footer-dark">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="https://liad07.github.io/crack-apps.github.io/Crack%20Apps">Home</a></li>
+            <li><a href="https://liad07.github.io/crack-apps.github.io/iptv.html">Iptv</a></li>
+            <li><a href="https://liad07.github.io/crack-apps.github.io/learn.html">Learn</a></li>
+            <li><a href="https://liad07.github.io/crack-apps.github.io/windows.html">Windows</a></li></ul></div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Crack Apps</h3>
+          <p class="text-right">האתר נוצר כדי לעזור לאנשים שנתקעו ללא משחק או שידור ושאין להם את הכסף לאפשר לעצמם לקנות את המשחקים/ערוצים האלה ובכללי כדי לעזור לאנשים&nbsp;</p>
+        </div>
+        <div class="col item social"><a href="https://github.com/liad07/crack-apps.github.io"><i class="icon ion-social-github"></i></a><a href="mailto:crackappsite@gmail.com"><i class="icon ion-email"></i></a><a href="https://sites.google.com/view/crackapps/"><i class="icon ion-social-google"></i></a></div>
+      </div>
+      <p class="copyright">Crack Apps © 2021</p>
+    </div>
+  </footer>
+</div>
+</html>
+<script>
+  (function() {
+    var ws = new WebSocket('ws://' + window.location.host + '/jb-server-page?reloadServiceClientId=52');
+    ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+        window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+        var messageId = msg.data.substring(11);
+        var links = document.getElementsByTagName('link');
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          if (link.rel !== 'stylesheet') continue;
+          var clonedLink = link.cloneNode(true);
+          var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+          if (newHref !== link.href) {
+            clonedLink.href = newHref;
+          }
+          else {
+            var indexOfQuest = newHref.indexOf('?');
+            if (indexOfQuest >= 0) {
+              // to support ?foo#hash
+              clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                      newHref.substring(indexOfQuest + 1);
+            }
+            else {
+              clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+            }
+          }
+          link.replaceWith(clonedLink);
+        }
+      }
+    };
+  })();
+</script>
