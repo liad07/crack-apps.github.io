@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../common/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="../common/bootstrap.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,46 +42,93 @@
             float: right;
         }
     </style>
+    <style>
+        #myDIV {
+            /*background-color: #dddddd;*/
+            width: 100%;
+            padding: -40px 0;
+            text-align: center;
+            float: right;
+        }
+        button{
+            float: right;
+        }
+.img{
+    width: 15%;
+    height: 30% ;
+    float: right !important;
+}
 
+h4{
+    text-align: right !important;
+    color: #ffffff;
+}
+        .down { Position: absolute; Bottom: 45%; }
+
+    </style>
 
 </head>
 <body>
 <div class="topnav">
-    <a href="Crack Apps.html">Home</a>
+    <a href="index.html">Home</a>
     <a class="active" href="windows.html">windows</a>
     <a href="iptv.html">iptv</a>
     <a href="learn.html">learn</a>
     <div class="topnav-right">
-         <a href="Mwindows.html">mobile support</a>
+        <a href="#search">login</a>
+        <a href="#about">signup</a>
     </div>
 </div>
 <center>
-    <div style="background-image: url('assets/img/apps/BG7.png');">
-        <img src="assets/img/apps/bg2.png" width="1154px" height="724x"></div>
+    <div id="myDIV" class="down" class="img">
+        <h4>פרסומת כי אני צריך כסף</h4><br>
+        <img class="img" src="https://i.imagesup.co/images2/420c06447a7d52804216fdf7208b2d4379c59639.png" width="20%" height="30%" >
+        <br>
+    </div>
 
+    <div style="background-image: url('windows/pics/apps/BG7.png');">
+        <img src="windows/pics/apps/bg2.png" width="1154px" height="724x"s></div>
+    <button id="myDIV1" class="btn btn-outline-secondary" onclick="myFunction()">hide ad</button>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var y = document.getElementById("myDIV1");
+            if (y.style.display === "none") {
+                y.style.display = "block";
+            } else {
+                y.style.display = "none";
+            }
+        }
+    </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <a href="windows/Adobe.html"><img src="assets/img/apps/adobe.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/kV1kFQSS#x-2EzuZC_1uyPJ_mHDEKXQ"><img src="assets/img/apps/all%20movies%20for%20u.png" width="335" height="164"></div></a>
-        <a href="windows/fifa19.html"><img src="assets/img/apps/fifa19.png" width="335" height="164"></div></a>
-    <a href="windows/cyberpunk2077.html"><img src="assets/img/apps/cyberpunk2077.png" width="335" height="164"></div></a>
-<br> <a href="windows/forzahorizon4.html"><img src="assets/img/apps/forza.png" width="335" height="164"></div></a>
-    <a href="windows/gta5.html"><img src="assets/img/apps/gta5.png" width="335" height="164"></div></a>
-    <a href="minecraft.html"><img src="assets/img/apps/minecraft.png" width="335" height="164"></div></a>
-    <a href="mortalkombat.html"><img src="assets/img/apps/mortal%20kombat.png" width="335" height="164"></div></a></br>
-<br><a href="https://mega.nz/folder/4YtWBALJ#zDzKUKeGrXgCxqttWbZJCA"><img src="assets/img/apps/movie%20maker.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/EM9ylYga#vsGGmR0m1GA4kZWVwzj-PA"><img src="assets/img/apps/movie%20maker2021.png" width="335" height="164"></div></a>
-    <a href="nba2k22.html"><img src="assets/img/apps/nba2k22.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/BE0WUYjT#Mo8xEW3uwokBLNv_Fek5ww"><img src="assets/img/apps/ofiice.png" width="335" height="164"></div></a></br>
-<br><a href="passwere.html"><img src="assets/img/apps/passware.png" width="335" height="164"></div></a>
-    <a href="pes21.html"><img src="assets/img/apps/pes2021.png" width="335" height="164"></div></a>
-    <a href="reddead2.html"><img src="assets/img/apps/red%20dead%20II.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/AU92xaBA#Lxv7VTdFSn6IXUY_912U6A"><img src="assets/img/apps/sdarot%20tv.png" width="335" height="164"></div></a></br>
-    <a href="sims4.html"><img src="assets/img/apps/sims4.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/Vc1CgIxQ#K6hihuRUa8M0-LEYykbu1A"><img src="assets/img/apps/spotify.png" width="335" height="164"></div></a>
-    <a href="wallpepereenigine.html"><img src="assets/img/apps/walpper%20enigine.png" width="335" height="164"></div></a>
-    <a href="windows2.html"><img src="assets/img/apps/windows2.png" width="335" height="164"></div></a>
+    <a href="windows/Adobe.html"><img src="windows/pics/apps/adobe.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/kV1kFQSS#x-2EzuZC_1uyPJ_mHDEKXQ"><img src="windows/pics/apps/all%20movies%20for%20u.png" width="335" height="164"></div></a>
+        <a href="windows/fifa19.html"><img src="windows/pics/apps/fifa19.png" width="335" height="164"></div></a>
+    <a href="windows/cyberpunk2077.html"><img src="windows/pics/apps/cyberpunk2077.png" width="335" height="164"></div></a>
+<br> <a href="windows/forzahorizon4.html"><img src="windows/pics/apps/forza.png" width="335" height="164"></div></a>
+    <a href="windows/gta5.html"><img src="windows/pics/apps/gta5.png" width="335" height="164"></dv></a>
+    <a href="windows/minecraft.html"><img src="windows/pics/apps/minecraft.png" width="335" height="164"></div></a>
+    <a href="windows/mk11.html"><img src="windows/pics/apps/mortal%20kombat.png" width="335" height="164"></div></a></br>
+<br><a href="https://mega.nz/folder/4YtWBALJ#zDzKUKeGrXgCxqttWbZJCA"><img src="windows/pics/apps/movie%20maker.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/EM9ylYga#vsGGmR0m1GA4kZWVwzj-PA"><img src="windows/pics/apps/movie%20maker2021.png" width="335" height="164"></div></a>
+    <a href="windows/nba2k22.html"><img src="windows/pics/apps/nba2k22.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/BE0WUYjT#Mo8xEW3uwokBLNv_Fek5ww"><img src="windows/pics/apps/ofiice.png" width="335" height="164"></div></a></br>
+<br><a href="https://lu9-my.sharepoint.com/:f:/g/personal/podlui_5tb_in/Em0hTop65kJKsXI6A0qG3XgBiZEpFfdkItKzTWQmMTlXHw?e=2Geklf"><img src="windows/pics/apps/passware.png" width="335" height="164"></div></a>
+    <a href="windows/pes21.html"><img src="windows/pics/apps/pes2021.png" width="335" height="164"></div></a>
+    <a href="windows/reddead2.html"><img src="windows/pics/apps/red%20dead%20II.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/AU92xaBA#Lxv7VTdFSn6IXUY_912U6A"><img src="windows/pics/apps/sdarot%20tv.png" width="335" height="164"></div></a></br>
+    <a href="windows/sims4.html"><img src="windows/pics/apps/sims4.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/Vc1CgIxQ#K6hihuRUa8M0-LEYykbu1A"><img src="windows/pics/apps/spotify.png" width="335" height="164"></div></a>
+    <a href="https://lu9-my.sharepoint.com/:f:/g/personal/podlui_5tb_in/EvpTwi2NzGpHu50mIUbbPuMBgn7w8xG7qXSqHf6qSey_-Q?e=JwiLC0"><img src="windows/pics/apps/walpper%20enigine.png" width="335" height="164"></div></a>
+    <a href="windows/windows2.html"><img src="windows/pics/apps/windows2.png" width="335" height="164"></div></a>
 </center>
-<style>
 
 </body>
 </html>
