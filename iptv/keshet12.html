@@ -5,21 +5,29 @@
     <title>קשת 12</title>
 
 
-    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
-    <script src="https://unpkg.com/video.js/dist/video.js"></script>
-    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    <link rel="stylesheet" href="iptv.css">
+
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
 
 </head>
 <body>
-<video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto"
-       data-setup='{}'>
-    <source src="https://keshethlslive-i.akamaihd.net/hls/live/512033/CH2LIVE_HIGH/index_2200.m3u8?hdntl=exp=1634363781~acl=/*~data=hdntl~hmac=10adb292cc33c221af67c65a2c32f4d93d2daf841a3d381420c4f2546fb145cd" type="application/x-mpegURL">
+<!-- CSS  -->
+
+
+<!-- HTML -->
+<video id='hls-example'  class="video-js vjs-default-skin"  height="1150px" controls>
+    <source type="application/x-mpegURL" src="http://tvshare.ottrast.com/iptv/78XG22LZ2KPCEV/2329/index.m3u8">
 </video>
 
+<!-- JS code -->
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
 <script>
-    var player = videojs('my_video_1');
+    var player = videojs('hls-example');
     player.play();
 </script>
-
 </body>
 </html>
