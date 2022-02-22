@@ -22,6 +22,8 @@ body {
 }
 body {
     overflow-x: hidden; /* Hide scrollbars */
+    overflow-y: scroll;
+
 }
 
 .topnav {
