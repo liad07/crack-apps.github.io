@@ -9,10 +9,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="css/topnav.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/crack-apps.css">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="assets/css/topnav.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/crack-apps.css">
       <div class="topnav">
         <a class="active" href="home.aspx">Home</a>
         <a href="windows.aspx">windows</a>
@@ -38,13 +38,13 @@
       
       <%  Response.Write(Session["nm"]);
         if (Session["nm"] != null || Session["Admin"] != null)
-              Response.Write(" <a href='nituk.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
+              Response.Write(" <a href='logout.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
 
            </div> </div>
       <title>Crack Apps</title>
     <center>
-        <div style="background-image: url('pics/bg.png');">
-            <img src="pics/all.png" width="1154px" height="724x"></div>
+        <div style="background-image: url('assets/pics/bg.png');">
+            <img src="assets/pics/all.png" width="1154px" height="724x"></div>
     </center>
     </div>
 
@@ -56,32 +56,32 @@
 
     <div class="col-sm-2">
         <a href="https://liad07.github.io/crackapps-iphone/">
-            <button type="submit" class="btn btn-outline-secondary"><img class="windows-logo" src="pics/Apple_logo_black.png" height="40" width="40" > Download </button>
+            <button type="submit" class="btn btn-outline-secondary"><img class="windows-logo" src="assets/pics/Apple_logo_black.png" height="40" width="40" > Download </button>
         </a>
 
     </div>
 
     <div class="col-sm-2">
-        <a href="crack-apps.apk">
-            <button type="submit" class="btn btn-outline-secondary"><img class="windows-logo" src="pics/android.png" height="40" width="40" > Download </button>
+        <a href="assets/android/crack-apps.apk">
+            <button type="submit" class="btn btn-outline-secondary"><img class="windows-logo" src="assets/pics/android.png" height="40" width="40" > Download </button>
         </a>
 
     </div>
 
     <div class="col-sm-2">
-        <a href="windows.html">
-            <button type="submit" class="btn btn-outline-secondary open-button"><img class="windows-logo" src="pics/windows.png" height="40" width="40" > open </button>
+        <a href="windows.aspx">
+            <button type="submit" class="btn btn-outline-secondary open-button"><img class="windows-logo" src="assets/pics/windows.png" height="40" width="40" > open </button>
         </a>
     </div>
 
     <div class="col-sm-2">
         <a href="download-page.html">
-            <button type="submit" class="btn btn-outline-secondary open-button"><img class="windows-logo" src="pics/windows.png" height="40" width="40" > download </button>
+            <button type="submit" class="btn btn-outline-secondary open-button"><img class="windows-logo" src="assets/pics/windows.png" height="40" width="40" > download </button>
         </a>
     </div>
     <div class="col-sm-2">
         <a href="https://github.com/liad07/crack-apps-addon/archive/refs/heads/main.zip">
-            <button type="submit" class="btn btn-outline-secondary open-button"><img class="windows-logo" src="pics/addon.png" height="40" width="40" > download </button>
+            <button type="submit" class="btn btn-outline-secondary open-button"><img class="windows-logo" src="assets/pics/addon.png" height="40" width="40" > download </button>
         </a>
     </div>
 
@@ -99,7 +99,7 @@
 <div class="row justify-content-center ">
     <div class="col mail-me d-flex justify-content-center">
         <a href="mailto:crackappsite@gmail.com?subject=%D7%A9%D7%90%D7%9C%D7%94&body=%D7%94%D7%99%D7%99%20%D7%99%D7%A9%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94">
-            <button type="submit" class="btn btn-outline-secondary mail-me-button"><img class="windows-logo" src="pics/mail.png" height="40" width="40" > Mail Me </button>
+            <button type="submit" class="btn btn-outline-secondary mail-me-button"><img class="windows-logo" src="assets/pics/mail.png" height="40" width="40" > Mail Me </button>
         </a>
 
     </div>

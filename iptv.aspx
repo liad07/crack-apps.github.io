@@ -20,10 +20,9 @@
     <script src="https://kit.fontawesome.com/996973c893.js" crossorigin="anonymous"></script>
 
     <!-- My Stylesheet -->
-    <link rel="stylesheet" href="iptv\style.css">
-
+<link rel="stylesheet" href="assets\iptv\style.css">
     <!-- My JS -->
-    <script src="iptv\main.js"></script>
+    <script src="assets\iptv\main.js"></script>
 
     <title>crack apps - iptv</title>
 
@@ -46,7 +45,7 @@
 
              <%  Response.Write(Session["nm"]);
           if (Session["nm"] != null || Session["Admin"] != null)
-              Response.Write("<a href='nituk.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
+              Response.Write("<a href='logout.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
            </div> 
 
     </div>
@@ -54,9 +53,7 @@
 </head>
 <body align="right" dir="rtl"  >
 <style>
-    body{
-  overflow: auto;
-    }
+ 
     .topnav {
         overflow: hidden;
         background-color: #333;
@@ -98,46 +95,46 @@
 <div class="container d-flex justify-content-between align-items-center mt-5">
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\kan11.html" class="read_more">כאן 11</a>
+        <a href="assets\iptv\kan11.html" class="read_more">כאן 11</a>
     </div>
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\keshet12.html" class="read_more">קשת 12</a>
+        <a href="assets\iptv\keshet12.html" class="read_more">קשת 12</a>
     </div>
     <div class="card" style="width: 10rem;">
-        <a href="iptv\reshet13.html" class="read_more">רשת 13</a>
+        <a href="assets\iptv\reshet13.html" class="read_more">רשת 13</a>
     </div>
     <div class="card" style="width: 10rem;">
-        <a href="iptv\now-14.html" class="read_more">עכשיו 14</a>
+        <a href="assets\iptv\now-14.html" class="read_more">עכשיו 14</a>
     </div>
 </div>
 <div class="container d-flex justify-content-between align-items-center mt-5">
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\one.html" class="read_more">one</a>
+        <a href="assets\iptv\one.html" class="read_more">one</a>
     </div>
 
     <div class="card" style="width: 10rem;">
         <a href="iptv\one2.html" class="read_more">one2</a>
     </div>
     <div class="card" style="width: 10rem;">
-        <a href="iptv\barca.html" class="read_more">barca tv</a>
+        <a href="assets\iptv\barca.html" class="read_more">barca tv</a>
     </div>
     <div class="card" style="width: 10rem;">
-        <a href="iptv\realmadrid.html" class="read_more">real madrid tv</a>
+        <a href="assets\iptv\realmadrid.html" class="read_more">real madrid tv</a>
     </div>
 </div>
 <div class="container d-flex justify-content-between align-items-center mt-5">
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sport4.html" class="read_more">ספורט 4</a>
+        <a href="assets\iptv\sport4.html" class="read_more">ספורט 4</a>
     </div>
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sport3.html" class="read_more">ספורט 3</a>
+        <a href="assets\iptv\sport3.html" class="read_more">ספורט 3</a>
     </div>
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sport2.html" class="read_more">ספורט 2</a>
+        <a href="assets\iptv\sport2.html" class="read_more">ספורט 2</a>
     </div>
     <div class="card" style="width: 10rem;">
         <a href="iptv\sport1.html" class="read_more">ספורט 1</a>
@@ -146,31 +143,31 @@
 
 <div class="container d-flex justify-content-between align-items-center mt-5">
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sport5live.html" class="read_more">ספורט 5 לייב</a>
+        <a href="assets\iptv\sport5live.html" class="read_more">ספורט 5 לייב</a>
     </div>
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sport5gold.html" class="read_more">ספורט 5 גולד</a>
+        <a href="assets\iptv\sport5gold.html" class="read_more">ספורט 5 גולד</a>
     </div>
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sport5plus.html" class="read_more">ספורט 5 פלוס</a>
+        <a href="assets\iptv\sport5plus.html" class="read_more">ספורט 5 פלוס</a>
     </div>
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sport5.html" class="read_more">ספורט 5</a>
+        <a href="assets\iptv\sport5.html" class="read_more">ספורט 5</a>
     </div>
 </div>
 <div class="container d-flex justify-content-between align-items-center mt-5">
     <div class="card" style="width: 10rem;">
-        <a href="iptv\kanedu.html" class="read_more">כאן חינוכית</a>
+        <a href="assets\iptv\kanedu.html" class="read_more">כאן חינוכית</a>
     </div>
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\sevila.html" class="read_more">sevila</a>
+        <a href="assets\iptv\sevila.html" class="read_more">sevila</a>
     </div>
 
     <div class="card" style="width: 10rem;">
-        <a href="iptv\betis.html" class="read_more">betis</a>
+        <a href="assets\iptv\betis.html" class="read_more">betis</a>
     </div>
     <div class="card" style="width: 10rem;">
         <a href="https://liad07.github.io/iptv/index.html" class="read_more">bot page</a>

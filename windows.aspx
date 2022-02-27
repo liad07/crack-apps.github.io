@@ -94,7 +94,7 @@ h4{
 
              <%  Response.Write(Session["nm"]);
           if (Session["nm"] != null || Session["Admin"] != null)
-              Response.Write("<a href='nituk.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
+              Response.Write("<a href='logout.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
            </div> 
 
 </div>
@@ -105,8 +105,8 @@ h4{
         <br>
     </div>
 
-    <div style="background-image: url('windows/pics/apps/BG7.png');">
-        <img src="windows/pics/apps/bg2.png" width="1154px" height="724x"s></div>
+    <div style="background-image: url('assets/windows/pics/apps/BG7.png');">
+        <img src="assets/windows/pics/apps/bg2.png" width="1154px" height="724x"s></div>
     <button id="myDIV1" class="btn btn-outline-secondary" onclick="myFunction()">hide ad</button>
 
 
@@ -127,26 +127,26 @@ h4{
         }
     </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <a href="windows/Adobe.html"><img src="windows/pics/apps/adobe.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/kV1kFQSS#x-2EzuZC_1uyPJ_mHDEKXQ"><img src="windows/pics/apps/all%20movies%20for%20u.png" width="335" height="164"></div></a>
-        <a href="windows/fifa19.html"><img src="windows/pics/apps/fifa19.png" width="335" height="164"></div></a>
-    <a href="windows/cyberpunk2077.html"><img src="windows/pics/apps/cyberpunk2077.png" width="335" height="164"></div></a>
-<br> <a href="windows/forzahorizon4.html"><img src="windows/pics/apps/forza.png" width="335" height="164"></div></a>
-    <a href="windows/gta5.html"><img src="windows/pics/apps/gta5.png" width="335" height="164"></dv></a>
-    <a href="windows/minecraft.html"><img src="windows/pics/apps/minecraft.png" width="335" height="164"></div></a>
-    <a href="windows/mk11.html"><img src="windows/pics/apps/mortal%20kombat.png" width="335" height="164"></div></a></br>
-<br><a href="https://mega.nz/folder/4YtWBALJ#zDzKUKeGrXgCxqttWbZJCA"><img src="windows/pics/apps/movie%20maker.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/EM9ylYga#vsGGmR0m1GA4kZWVwzj-PA"><img src="windows/pics/apps/movie%20maker2021.png" width="335" height="164"></div></a>
-    <a href="windows/nba2k22.html"><img src="windows/pics/apps/nba2k22.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/BE0WUYjT#Mo8xEW3uwokBLNv_Fek5ww"><img src="windows/pics/apps/ofiice.png" width="335" height="164"></div></a></br>
-<br><a href="https://lu9-my.sharepoint.com/:f:/g/personal/podlui_5tb_in/Em0hTop65kJKsXI6A0qG3XgBiZEpFfdkItKzTWQmMTlXHw?e=2Geklf"><img src="windows/pics/apps/passware.png" width="335" height="164"></div></a>
-    <a href="windows/pes21.html"><img src="windows/pics/apps/pes2021.png" width="335" height="164"></div></a>
-    <a href="windows/reddead2.html"><img src="windows/pics/apps/red%20dead%20II.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/AU92xaBA#Lxv7VTdFSn6IXUY_912U6A"><img src="windows/pics/apps/sdarot%20tv.png" width="335" height="164"></div></a></br>
-    <a href="windows/sims4.html"><img src="windows/pics/apps/sims4.png" width="335" height="164"></div></a>
-    <a href="https://mega.nz/folder/Vc1CgIxQ#K6hihuRUa8M0-LEYykbu1A"><img src="windows/pics/apps/spotify.png" width="335" height="164"></div></a>
-    <a href="https://lu9-my.sharepoint.com/:f:/g/personal/podlui_5tb_in/EvpTwi2NzGpHu50mIUbbPuMBgn7w8xG7qXSqHf6qSey_-Q?e=JwiLC0"><img src="windows/pics/apps/walpper%20enigine.png" width="335" height="164"></div></a>
-    <a href="windows/windows2.html"><img src="windows/pics/apps/windows2.png" width="335" height="164"></div></a>
+    <a href="assets/windows/Adobe.html"><img src="assets/windows/pics/apps/adobe.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/kV1kFQSS#x-2EzuZC_1uyPJ_mHDEKXQ"><img src="assets/windows/pics/apps/all%20movies%20for%20u.png" width="335" height="164"></div></a>
+        <a href="assets/windows/fifa19.html"><img src="assets/windows/pics/apps/fifa19.png" width="335" height="164"></div></a>
+    <a href="assets/windows/cyberpunk2077.html"><img src="assets/windows/pics/apps/cyberpunk2077.png" width="335" height="164"></div></a>
+<br> <a href="assets/windows/forzahorizon4.html"><img src="assets/windows/pics/apps/forza.png" width="335" height="164"></div></a>
+    <a href="assets/windows/gta5.html"><img src="assets/windows/pics/apps/gta5.png" width="335" height="164"></dv></a>
+    <a href="assets/windows/minecraft.html"><img src="assets/windows/pics/apps/minecraft.png" width="335" height="164"></div></a>
+    <a href="assets/windows/mk11.html"><img src="assets/windows/pics/apps/mortal%20kombat.png" width="335" height="164"></div></a></br>
+<br><a href="https://mega.nz/folder/4YtWBALJ#zDzKUKeGrXgCxqttWbZJCA"><img src="assets/windows/pics/apps/movie%20maker.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/EM9ylYga#vsGGmR0m1GA4kZWVwzj-PA"><img src="assets/windows/pics/apps/movie%20maker2021.png" width="335" height="164"></div></a>
+    <a href="assets/windows/nba2k22.html"><img src="assets/windows/pics/apps/nba2k22.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/BE0WUYjT#Mo8xEW3uwokBLNv_Fek5ww"><img src="assets/windows/pics/apps/ofiice.png" width="335" height="164"></div></a></br>
+<br><a href="https://lu9-my.sharepoint.com/:f:/g/personal/podlui_5tb_in/Em0hTop65kJKsXI6A0qG3XgBiZEpFfdkItKzTWQmMTlXHw?e=2Geklf"><img src="assets/windows/pics/apps/passware.png" width="335" height="164"></div></a>
+    <a href="assets/windows/pes21.html"><img src="assets/windows/pics/apps/pes2021.png" width="335" height="164"></div></a>
+    <a href="assets/windows/reddead2.html"><img src="assets/windows/pics/apps/red%20dead%20II.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/AU92xaBA#Lxv7VTdFSn6IXUY_912U6A"><img src="assets/windows/pics/apps/sdarot%20tv.png" width="335" height="164"></div></a></br>
+    <a href="assets/windows/sims4.html"><img src="assets/windows/pics/apps/sims4.png" width="335" height="164"></div></a>
+    <a href="https://mega.nz/folder/Vc1CgIxQ#K6hihuRUa8M0-LEYykbu1A"><img src="assets/windows/pics/apps/spotify.png" width="335" height="164"></div></a>
+    <a href="https://lu9-my.sharepoint.com/:f:/g/personal/podlui_5tb_in/EvpTwi2NzGpHu50mIUbbPuMBgn7w8xG7qXSqHf6qSey_-Q?e=JwiLC0"><img src="assets/windows/pics/apps/walpper%20enigine.png" width="335" height="164"></div></a>
+    <a href="assets/windows/windows2.html"><img src="assets/windows/pics/apps/windows2.png" width="335" height="164"></div></a>
 </center>
 
 </body>

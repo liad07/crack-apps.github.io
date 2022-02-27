@@ -8,7 +8,7 @@
           <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js" ></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <link rel="stylesheet" href="signup.css"/>
+    <link rel="stylesheet" href="assets/css/signup.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />

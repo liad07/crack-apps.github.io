@@ -63,7 +63,7 @@
 
              <%  Response.Write(Session["nm"]);
           if (Session["nm"] != null || Session["Admin"] != null)
-              Response.Write("<a href='nituk.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
+              Response.Write("<a href='logout.aspx'>התנתק</a> <a href='updateM.aspx'>עדכון פרטים</a>");%>
            </div> 
 
     </div>
@@ -72,8 +72,8 @@
 <body align="right" dir="rtl"  >
 
 <center>
-        <div style="background-image: url('learn/bg.jpg');">
-            <img src="learn/learn.png" width="1154px" height="724x"></div>
+        <div style="background-image: url('assets/learn/bg.jpg');">
+            <img src="assets/learn/learn.png" width="1154px" height="724x"></div>
 </center>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -184,22 +184,22 @@
 
     <div class="mySlides fade">
         <div class="numbertext">1 / 4</div>
-        <img src="learn/ONE%20DRIVE.png" style="width:100%">
+        <img src="assets/learn/ONE%20DRIVE.png" style="width:100%">
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">2 / 4</div>
-        <img src="learn/web2exe.png" style="width:100%">
+        <img src="assets/learn/web2exe.png" style="width:100%">
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 4</div>
-        <img src="learn/steam%20sale.png" style="width:100%">
+        <img src="assets/learn/steam%20sale.png" style="width:100%">
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
-        <img src="learn/web2apk.png" style="width:100%">
+        <img src="assets/learn/web2apk.png" style="width:100%">
     </div>
     
     <a  class="next" onclick="plusSlides(-1)">&#10094;</a>
