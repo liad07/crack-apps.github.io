@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>barca tv</title>
+
+    <link rel="stylesheet" href="iptv.css">
+
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- CSS  -->
+
+
+<!-- HTML -->
+<video id='hls-example'  class="video-js vjs-default-skin"  height="1150px" controls>
+    <source type="application/x-mpegURL" src="https://streamamghdl-lh.akamaihd.net/i/03ixifoo5_1@149344/index_1_av-p.m3u8?sd=10&rebase=on&hdntl=exp=1644583131~acl=%2fi%2f03ixifoo5_1%40149344*~data=hdntl~hmac=b1d5deff88114ef9230396f8c272b9c6315bf666f0b0d855a8cc9573c20f7356">
+</video>
+
+<!-- JS code -->
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+<script>
+    var player = videojs('hls-example');
+    player.play();
+</script>
+</body>
+</html>
