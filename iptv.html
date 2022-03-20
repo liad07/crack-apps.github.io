@@ -167,6 +167,9 @@
     mouth=mouth.toString();
     var day=d.getDate();
     day=day.toString();
+         if (mouth < 10) {
+            mouth = 0 + mouth
+        }
     if (mouth=="03"&&day=="20") {
         counter = year - 2021;
         var str = "its our " + counter + " birthday"
@@ -176,9 +179,7 @@
         a.href = "birthday.css";
         var b = document.getElementById('icon');
         b.href = "birthday.ico";
-        if (mouth < 10) {
-            mouth = 0 + mouth
-        }
+       
     }
 
 </script>
