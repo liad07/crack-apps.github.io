@@ -65,7 +65,9 @@
 <div class="container text-center mt-5">
     <h1 class="main">crack apps - iptv</h1>
 </div>
-
+<center>
+    <p class="font" id="text"></p>
+</center>
 <div class="container text-center mt-5">
     <i class="fas fa-sun fa-3x theme_icon"></i>
 </div>
@@ -152,5 +154,32 @@
         <a href="https://liad07.github.io/iptv/index.html" class="read_more">bot page</a>
     </div>
 </div>
+    <script>
+    const y = new Date();
+    var year=y.getFullYear();
+    year=year.toString();
+    var counter;
+    const m = new Date();
+    const d = new Date();
+    var mouth=m.getMonth() + 1;
+    mouth=mouth.toString();
+    var day=d.getDate();
+    day=day.toString();
+    if (mouth=="03"&&day=="20") {
+        counter = year - 2021;
+        var str = "its our " + counter + " birthday"
+        document.getElementById("text").innerHTML = str;
+
+        var a = document.getElementById('css');
+        a.href = "birthday.css";
+        var b = document.getElementById('icon');
+        b.href = "birthday.ico";
+        if (mouth < 10) {
+            mouth = 0 + mouth
+        }
+    }
+
+</script>
+
 </body>
 </html>
