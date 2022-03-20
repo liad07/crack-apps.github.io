@@ -24,7 +24,33 @@
         <div style="background-image: url('pics/bg.png');">
             <img src="pics/all.png" width="1154px" height="724x"></div>
     </center>
-    
+    <center>
+    <p class="font" id="text"></p>
+</center>
+<script>
+    const y = new Date();
+    var year=y.getFullYear();
+    year=year.toString();
+    var counter;
+    counter=year-2021;
+    var str="its our "+counter+" birthday"
+    document.getElementById("text").innerHTML = str;
+    const m = new Date();
+    const d = new Date();
+    var mouth=m.getMonth() + 1;
+    mouth=mouth.toString();
+    var day=d.getDate();
+    day=day.toString();
+    var a = document.getElementById('css');
+    a.href = "birthday.css";
+    var b = document.getElementById('icon');
+    b.href = "birthday.ico";
+    if (mouth<10){
+        mouth=0+mouth
+    }
+
+
+</script>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
