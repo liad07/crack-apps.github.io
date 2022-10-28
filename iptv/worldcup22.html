@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>worlcup</title>
+</head>
+<body>
+<style>
+    .circel{
+        background-color: #9b072e;
+        width: 200px;
+        height: 40px;
+        border-radius: 50px;
+    }
+    #datetime{
+        padding-top: 10px;
+        color: white;
+    }
+</style>
+
+<center>
+    <img src="2022_FIFA_World_Cup.svg.png" width="200">
+    <div class="circel">
+        <p id="datetime"></p>
+    </div>
+<br>
+    <a href="../kan11" id="link"></a>
+</center>
+
+<script>
+    var countDownDate = new Date("Nov 20, 2022 18:00:00").getTime();
+
+    var x = setInterval(function() {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+
+        document.getElementById("datetime").innerHTML = ""+days+" days to world cup";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("link").innerHTML = "לינק למשחק";
+        }
+    }, 1000);
+</script>
+</body>
+</html>
