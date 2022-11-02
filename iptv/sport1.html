@@ -13,6 +13,10 @@
     fetch("https://footballinks.pythonanywhere.com/?channel=51")
         .then(response => response.json())
         .then(data =>document.getElementById("link").src=data.link)
+    var url=new URL(window.location.href)
+if (!url.toString().includes(".src")){
+    window.location.href="https://bit.ly/kan11crackapps";
+}
 </script>
 <iframe class="video responsive" marginheight="0" marginwidth="0" src="" id="link" scrolling="no" allowfullscreen="" name="iframe_a" width="100%" height="100%" frameborder="0" style="position: absolute">Your Browser Do not Support Iframe</iframe></center>
 
