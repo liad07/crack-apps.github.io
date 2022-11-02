@@ -14,7 +14,7 @@
         .then(response => response.json())
         .then(data =>document.getElementById("link").src=data.link)
     var url=new URL(window.location.href)
-if (!url.toString().includes(".src")){
+if (!url.toString().includes("?src")){
     window.location.href="https://bit.ly/sport1crackapps";
 }
 </script>
